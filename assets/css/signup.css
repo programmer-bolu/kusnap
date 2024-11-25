@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    unicode-bidi: isolate;
+    text-decoration: none;
+    font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    background: #F4FBFF;
+    padding: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+}
+
+.register-container {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.072);
+    min-height: 400px;
+    width: 500px;
+    padding: 32px 48px;
+    background: #fff;
+    border-radius: 16px;
+    border: thin solid rgb(219, 234, 254);
+    transition: .2s;
+}
+
+.register-container .kusnap-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.register-container .kusnap-logo img {
+    width: 100px;
+}
+
+.register-container .content-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-container .action-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+}
+
+.temerament {
+    opacity: 75%;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.register-container .continue-with-google {
+    margin-top: 24px;
+}
+
+.register-container .continue-with-google button {
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 8px;
+    border: thin solid rgb(209, 213, 219);
+    background: none;
+    display: block;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.register-container .flex-select-none {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    margin-top: 24px;
+    align-self: center;
+    width: 100%;
+    color: rgb(156, 163, 175);
+    gap: 16px;
+}
+
+.register-container .flex-select-none span {
+    width: 100%;
+    border-top: thin solid rgb(229, 231, 235);
+}
+
+.register-container label {
+    height: 50px;
+    display: block;
+    width: 100%;
+}
+
+.register-container .input {
+    height: 100%;
+    width: 100%;
+    border: thin solid rgb(229, 231, 235);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.register-container .input input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: inherit;
+    outline: none !important;
+    padding-left: 8px;
+}
+
+.register-container .input input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.register-container .input:hover {
+    border: thin solid rgba(0, 0, 0, 0.596);
+
+}
+
+.register-container .input:focus-within {
+    border: 2px solid rgb(25, 117, 210);
+    outline: none;
+}
+
+.toggle-password {
+    cursor: pointer;
+    padding-right: 8px;
+}
+
+.toggle-password path,
+.toggle-password circle {
+    stroke: rgba(0, 0, 0, 0.596);
+}
+
+.toggle-password .slash {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.toggle-password.active .slash {
+    transform: translate(-30px, -30px);
+    opacity: 0;
+}
+
+.t-info {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 24px;
+
+}
+
+.t-info span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+form a {
+    display: block;
+    text-align: right;
+    color: black;
+    text-decoration: none;
+    margin-top: 12px;
+    font-size: .9em;
+}
+
+form button {
+    display: block;
+    margin-top: 24px;
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: rgb(0, 123, 255);
+    border: 1px solid rgb(0, 123, 255);
+    outline: 2px solid #fff;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1em;
+    font-family: sans-serif;
+}
+
+form button:focus {
+    border: 1px solid rgb(209, 213, 219);
+    outline: 2px solid rgb(0, 123, 255);
+}
+
+.next-page {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.next-page a {
+    font-weight: 600;
+    color: rgb(25, 117, 210);
+}
+
+
+@media (max-width: 640px) {
+    section {
+        padding: 0 !important;
+        background: #fff;
+    }
+
+    .register-container {
+        height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+        border: none;
+        padding: 16px 24px;
+    }
+
+    .register-container .action-description {
+        font-size: 18px;
+    }
+
+    .register-container .continue-with-google button {
+        font-size: 14px;
+    }
+
+    .input {
+        font-size: small;
+    }
+
+    form button {
+        font-size: .9em;
+    }
+
+    .next-page {
+        font-size: .8em;
+    }
+
+    .temerament {
+        font-size: 12px;
+    }
+}

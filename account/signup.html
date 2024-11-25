@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kusnap Nigeria | Free Online Marketplace to Buy & Sell in Nigeria</title>
+    <link rel="stylesheet" href="../assets/css/signup.css">
+    <script src="../assets/vendor/jquery.min.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="register-container">
+            <a href="#" class="kusnap-logo">
+                <img src="../assets/images/kusnap-logo-login.svg" alt="">
+            </a>
+            <div class="content-cont">
+                <h2 class="action-description">
+                    Create an Account
+                </h2>
+                <p class="temerament">
+                    Join thousands of users buying and selling <br>
+                    products on Kusnap daily.
+                </p>
+                <div class="continue-with-google">
+                    <button>
+                        <img src="../assets/images/google-svg.svg" alt="">
+                        <span>Continue with Google</span>
+                    </button>
+                </div>
+                <div class="flex-select-none">
+                    <span></span>
+                    OR
+                    <span></span>
+                </div>
+                <form action="">
+                    <label for="name">
+                        <div class="input">
+                            <input class="name" id="name" name="name" placeholder="Full Name *" type="text" required/>
+                        </div>
+                    </label>
+
+
+                    <label for="email">
+                        <div class="input">
+                            <input class="email" id="email" name="email" placeholder="Email Address *" type="email" required/>
+                        </div>
+                    </label>
+
+                    <label for="number">
+                        <div class="input">
+                            <input class="number" id="number" name="number" placeholder="Phone Number *" type="number" required/>
+                        </div>
+                    </label>
+
+
+                    <label>
+                        <div class="input">
+                            <input class="password" id="password" name="password" placeholder="Password *" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" required/>
+                            <div class="toggle-password">
+                                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#000" />
+                                    <circle cx="12" cy="12" r="3" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path class="slash" d="M3 3L21 21" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label>
+                        <div class="input">
+                            <input class="confirm-password" id="confirm-password" name="confirm-password" placeholder="Confirm Password *" type="password" required/>
+                            <div class="toggle-password">
+                                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#000" />
+                                    <circle cx="12" cy="12" r="3" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path class="slash" d="M3 3L21 21" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </label>
+
+
+                    <p class="t-info">
+                        By creating an account, you agree to our
+                        <br>
+                        <span>Privacy Policy</span>, <span>Terms and Conditions</span>
+                    </p>
+                    <button type="submit">
+                        Create Account
+                    </button>
+                </form>
+
+                <div class="next-page">
+                    Already have an account? <a href="">Log In</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    $('.toggle-password').on('click', function () {
+        var input = $(this).siblings('input');
+        if (input.attr('type') == 'text') {
+            $(input).attr('type', 'password');
+            $(this).removeClass('active');
+        } else {
+            $(input).attr('type', 'text');
+            $(this).addClass('active');
+        }
+
+        input.to
+    });
+</script>
+
+</html>

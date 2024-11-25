@@ -1,0 +1,86 @@
+.container {
+    width: 80rem;
+    padding: 10px;
+    margin: auto;
+    border: thin solid rgb(229, 231, 235);
+    border-radius: 8px;
+    min-height: 700px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.container form .flex {
+    display: flex;
+    gap: 32px;
+}
+
+.container form .flex input {
+    padding: 16px;
+    width: 100%;
+    border-radius: 8px;
+    border: thin solid rgb(229, 231, 235);
+    transition: .2s ease-in-out;
+}
+
+.container form .flex input:hover {
+    border: thin solid rgb(141, 141, 141);
+}
+
+.container form .flex input:focus {
+    outline: thin solid rgb(25, 118, 210);
+    border: none;
+}
+
+.container form .flex input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.container form button {
+    padding: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    width: 250px;
+    align-self: flex-end;
+    transition: .2s;
+}
+
+.container form button:hover {
+    background: rgb(25, 118, 210);
+    color: white;
+}
+
+
+@media (max-width: 1300px) {
+    main {
+        padding: 0 10px;
+    }
+
+    .container {
+        width: 100% !important;
+        margin: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+        gap: 10px !important;
+    }
+
+    .container form {
+        gap: 10px;
+    }
+
+    .container h1{
+        font-size: large;
+        color: rgb(64, 64, 64);
+    }
+}

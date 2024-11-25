@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kusnap Nigeria | Free Online Marketplace to Buy & Sell in Nigeria</title>
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <script src="../assets/vendor/jquery.min.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="login-container">
+            <a href="" class="kusnap-logo">
+                <img src="../assets/images/kusnap-logo-login.svg" alt="">
+            </a>
+            <div class="content-cont">
+                <h2 class="action-description">
+                    Log into your account
+                </h2>
+                <div class="continue-with-google">
+                    <button>
+                        <img src="../assets/images/google-svg.svg" alt="">
+                        <span>Continue with Google</span>
+                    </button>
+                </div>
+                <div class="flex-select-none">
+                    <span></span>
+                    OR
+                    <span></span>
+                </div>
+                <form action="#">
+                    <label for="email">
+                        <div class="input">
+                            <input class="email" id="email" name="email" placeholder="Email" type="email" />
+                        </div>
+                    </label>
+
+                    <label>
+                        <div class="input">
+                            <input class="email" id="password" name="password" placeholder="Password" type="password" />
+                            <div class="toggle-password">
+                                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 12C1 12 5 4 12 4C19 4 23 12 23 12C23 12 19 20 12 20C5 20 1 12 1 12Z"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#000" />
+                                    <circle cx="12" cy="12" r="3" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path class="slash" d="M3 3L21 21" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </label>
+
+                    <a href="#">Forgot Password?</a>
+                    
+                    <button type="submit">
+                        LOG IN
+                    </button>
+                </form>
+
+                <div class="next-page">
+                    Don't have an account? <a href="#">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    $('.toggle-password').on('click', function () {
+        var input = $(this).siblings('input');
+        if (input.attr('type') == 'text') {
+            $(input).attr('type', 'password');
+            $(this).removeClass('active');
+        } else {
+            $(input).attr('type', 'text');
+            $(this).addClass('active');
+        }
+    });
+</script>
+</html>
